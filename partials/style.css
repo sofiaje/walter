@@ -2,7 +2,8 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Nunito", sans-serif;
+  line-height: 1.5;
+  font-family: Georgia, Times, "Times New Roman", serif;
 }
 
 img {
@@ -13,6 +14,12 @@ img {
 .cover {
   max-width: 300px;
   border-radius: 1rem;
+}
+
+.hero_img {
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: -1;
 }
 
 .page_container {
@@ -31,7 +38,7 @@ img {
 section {
   max-width: 400px;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   section {
     max-width: 300px;
   }
@@ -41,7 +48,7 @@ section {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 2.5rem;
 }
 
 .info_container.second {
@@ -59,12 +66,6 @@ section {
   display: none;
 }
 
-.hero_img {
-  position: -webkit-sticky;
-  position: sticky;
-  z-index: -1;
-}
-
 h1,
 h2,
 h3,
@@ -72,7 +73,31 @@ h4,
 h5 {
   font-family: "Barlow Semi Condensed", sans-serif;
   font-weight: 100;
-  padding: 1.5rem 0;
+  padding: 1rem 0;
+}
+
+h1 {
+  font-size: 4rem;
+  text-align: center;
+}
+
+.song {
+  font-style: italic;
+}
+
+a {
+  color: white;
+}
+
+header {
+  background-color: #dee3e1;
+  border-bottom: 1px solid;
+  box-shadow: 0 0 10px black;
+}
+header .header_container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
 }
 
 nav a,
@@ -81,7 +106,7 @@ nav button {
   border: none;
   cursor: pointer;
   font-family: "Barlow Semi Condensed", sans-serif;
-  font-weight: bold;
+  font-weight: 300;
   color: black;
   text-transform: uppercase;
   text-decoration: none;
@@ -106,17 +131,6 @@ ul {
   padding: 0;
 }
 
-header {
-  background-color: #dee3e1;
-  border-bottom: 1px solid;
-  box-shadow: 0 0 10px black;
-}
-header .header_container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 1rem;
-}
-
 footer {
   background-color: #98a19d;
   color: #ffffff;
@@ -135,17 +149,4 @@ footer .copy {
 footer i {
   font-size: 1.3rem;
   margin: 1rem;
-}
-
-h1 {
-  font-size: 4rem;
-  text-align: center;
-}
-
-.song {
-  font-style: italic;
-}
-
-a {
-  color: white;
 }/*# sourceMappingURL=style.css.map */

@@ -4,9 +4,12 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Nunito", sans-serif;
+  line-height: 1.5;
+  font-family: Georgia, Times, "Times New Roman", serif;
+  // font-family: "Nunito", sans-serif;
 }
 
+//img
 img {
   width: 100%;
   max-height: 100vh;
@@ -15,6 +18,12 @@ img {
   max-width: 300px;
   border-radius: 1rem;
 }
+.hero_img {
+  position: sticky;
+  z-index: -1;
+}
+
+//content
 .page_container {
   height: 100vh;
   display: flex;
@@ -26,10 +35,9 @@ img {
   margin: 0px auto;
   padding: 0rem 1.5rem 3rem 1.5rem;
 }
-
 section {
   max-width: 400px;
-  @include md {
+  @include lg {
     max-width: 300px;
   }
 }
@@ -37,8 +45,9 @@ section {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 2.5rem;
 }
+
 .info_container.second {
   flex-direction: column;
   align-items: center;
@@ -51,10 +60,7 @@ section {
   display: none;
 }
 
-.hero_img {
-  position: sticky;
-  z-index: -1;
-}
+//text
 h1,
 h2,
 h3,
@@ -62,9 +68,30 @@ h4,
 h5 {
   font-family: "Barlow Semi Condensed", sans-serif;
   font-weight: 100;
-  padding: 1.5rem 0;
+  padding: 1rem 0;
+}
+h1 {
+  font-size: 4rem;
+  text-align: center;
+}
+.song {
+  font-style: italic;
+}
+a {
+  color: white;
 }
 
+//header
+header {
+  background-color: #dee3e1;
+  border-bottom: 1px solid;
+  box-shadow: 0 0 10px (black);
+  .header_container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+}
 nav {
   a,
   button {
@@ -72,7 +99,7 @@ nav {
     border: none;
     cursor: pointer;
     font-family: "Barlow Semi Condensed", sans-serif;
-    font-weight: bold;
+    font-weight: 300;
     color: black;
     text-transform: uppercase;
     text-decoration: none;
@@ -86,7 +113,6 @@ nav {
     font-size: 1.8rem;
   }
 }
-
 ul {
   list-style: none;
   display: flex;
@@ -94,16 +120,8 @@ ul {
   align-items: center;
   padding: 0;
 }
-header {
-  background-color: #dee3e1;
-  border-bottom: 1px solid;
-  box-shadow: 0 0 10px (black);
-  .header_container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 1rem;
-  }
-}
+
+//footer
 footer {
   background-color: #98a19d;
   color: #ffffff;
@@ -124,14 +142,4 @@ footer {
     font-size: 1.3rem;
     margin: 1rem;
   }
-}
-h1 {
-  font-size: 4rem;
-  text-align: center;
-}
-.song {
-  font-style: italic;
-}
-a {
-  color: white;
 }
