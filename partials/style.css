@@ -1,10 +1,7 @@
-body {
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-}
-
-* {
   font-family: "Nunito", sans-serif;
 }
 
@@ -34,7 +31,7 @@ img {
 section {
   max-width: 400px;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   section {
     max-width: 300px;
   }
@@ -75,6 +72,7 @@ h4,
 h5 {
   font-family: "Barlow Semi Condensed", sans-serif;
   font-weight: 100;
+  padding: 1.5rem 0;
 }
 
 nav a,
@@ -87,6 +85,7 @@ nav button {
   color: black;
   text-transform: uppercase;
   text-decoration: none;
+  margin: 1rem 0;
   font-size: 1.1rem;
 }
 @media (min-width: 768px) {
@@ -104,6 +103,7 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0;
 }
 
 header {
